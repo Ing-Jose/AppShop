@@ -1,12 +1,9 @@
 import { RouterModule, Routes } from '@angular/router';
 
-import { PagesComponent } from './pages/pages.component';
-
 import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './login/register.component';
 import { NopagefoundComponent } from './shared/nopagefound/nopagefound.component';
-import { DashboardComponent } from './pages/dashboard/dashboard.component';
-import { ZapatosComponent } from './pages/zapatos/zapatos.component';
+
 // import { LoginGuardGuard } from './services/service.index';
 
 /**
@@ -17,14 +14,7 @@ import { ZapatosComponent } from './pages/zapatos/zapatos.component';
  */
 const appRoutes: Routes = [
     { path: 'login', component: LoginComponent },
-    { 
-        path: '', 
-        component: PagesComponent,
-        children:[
-            { path: 'dashboard', component: DashboardComponent },
-            { path: 'zapatos', component: ZapatosComponent },
-        ] 
-    },
+    
     { path: 'register', component: RegisterComponent },
     //bloquedo para que no se pueda acceder quien no este registrado
     // { path: 'register', component: RegisterComponent, canActivate: [LoginGuardGuard] },

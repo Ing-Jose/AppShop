@@ -2,6 +2,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { PagesComponent } from './pages.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { ZapatosComponent } from './zapatos/zapatos.component';
+import { Graficas1Component } from './graficas1/graficas1.component';
 
 const pagesRoutes: Routes = [
     {
@@ -10,6 +11,7 @@ const pagesRoutes: Routes = [
         children: [
             { path: 'dashboard', component: DashboardComponent },
             { path: 'zapatos', component: ZapatosComponent },
+            { path: 'graficas', component: Graficas1Component }
         ]
     },
 ];

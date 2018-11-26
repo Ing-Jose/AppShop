@@ -16,7 +16,7 @@ const appRoutes: Routes = [
     { path: 'login', component: LoginComponent },
     
     { path: 'register', component: RegisterComponent },
-    //bloquedo para que no se pueda acceder quien no este registrado
+    // bloquedo para que no se pueda acceder quien no este registrado
     // { path: 'register', component: RegisterComponent, canActivate: [LoginGuardGuard] },
     // {
     //     path: '',
@@ -27,5 +27,5 @@ const appRoutes: Routes = [
     { path: '**', component: NopagefoundComponent }
 ];
 
-//exportando este modulo, { useHash: true } permite el usu de #
+// exportando este modulo, { useHash: true } permite el usu de #
 export const APP_ROUTES = RouterModule.forRoot(appRoutes, { useHash: true });

@@ -3,6 +3,7 @@ import { PagesComponent } from './pages.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { ZapatosComponent } from './zapatos/zapatos.component';
 import { Graficas1Component } from './graficas1/graficas1.component';
+import { AccoutSettingComponent } from './accout-setting/accout-setting.component';
 
 const pagesRoutes: Routes = [
     {
@@ -11,10 +12,11 @@ const pagesRoutes: Routes = [
         children: [
             { path: 'dashboard', component: DashboardComponent },
             { path: 'zapatos', component: ZapatosComponent },
-            { path: 'graficas', component: Graficas1Component }
+            { path: 'graficas', component: Graficas1Component },
+            { path: 'accout-settings', component: AccoutSettingComponent }
         ]
     },
 ];
 
-//exportando este modulo, { useHash: true } permite el usu de #
+// exportando este modulo, { useHash: true } permite el usu de #
 export const PAGES_ROUTES = RouterModule.forChild(pagesRoutes);

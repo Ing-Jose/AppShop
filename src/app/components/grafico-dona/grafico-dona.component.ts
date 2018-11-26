@@ -6,7 +6,7 @@ import { Component, OnInit, Input } from '@angular/core';
   styles: []
 })
 export class GraficoDonaComponent implements OnInit {
-  //para permitir la entrada de estos componentes
+  // para permitir la entrada de estos componentes
   @Input('chartLabels') doughnutChartLabels: string[] = [];
   @Input('chartData') doughnutChartData: number[] = [];
   @Input('chartType') doughnutChartType: string = '';

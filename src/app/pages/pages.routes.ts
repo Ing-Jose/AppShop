@@ -10,10 +10,14 @@ const pagesRoutes: Routes = [
         path: '',
         component: PagesComponent,
         children: [
-            { path: 'dashboard', component: DashboardComponent },
-            { path: 'zapatos', component: ZapatosComponent },
-            { path: 'graficas', component: Graficas1Component },
-            { path: 'accout-settings', component: AccoutSettingComponent }
+            /**
+             * enviamos el path, el componente y un objeto
+             * el objeto puede llevar multiple información
+             */
+            { path: 'dashboard', component: DashboardComponent, data: { titulo: 'Dashboard'} },
+            { path: 'zapatos', component: ZapatosComponent, data: { titulo: 'Zapatos'}  },
+            { path: 'graficas', component: Graficas1Component, data: { titulo: 'Gráficas'}  },
+            { path: 'accout-settings', component: AccoutSettingComponent, data: { titulo: 'Ajuste Tema'}  }
         ]
     },
 ];
